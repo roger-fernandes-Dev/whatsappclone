@@ -11,34 +11,34 @@ export default function Layout(){
                     </div>
                 </section>
             </section>
-            <section className="w-full h-3/4"></section>
-            <section className="w-1000 max-w-[90%] h-90 absolute top-36 shadow-2xl bg-white">
-                <section className="w-full h-1/2 flex bg-white">
-                    <section className="w-3/5 h-full flex flex-col justify-center items=center">
-                        <h2 className="w-full flex justify-center text-3xl font-light text-slate-500">Use o WhatsApp no seu computador</h2>
-                        <section className="w-full h-56 flex flex-col justify-around mt-5 ml-10">
-                            <span className="">1. Abra o WhatsApp no seu celular</span>
+            <section className="w-1000 max-w-[90%] h-90 absolute top-36 shadow-2xl bg-slate-500">
+                <section className="w-full h-full lg:h-1/2 flex flex-col lg:flex-row bg-white">
+                    <section className="w-3/5 h-full flex flex-col justify-center items-center">
+                        <header className="w-full mb-5 flex justify-center  text-xl lg:text-3xl font-light text-slate-500">
+                            <h2 className="flex justify-center items-center">Use o WhatsApp no seu computador</h2>
+                        </header>
+                        <section className="w-full h-56 flex flex-col justify-around items-center lg:items-start mt-5 ml-10">
+                            <span className="text-center lg:text-start">1. Abra o WhatsApp no seu celular</span>
                             <span className="w-full flex">2. Toque em Mais opções {iconPonto} ou configurações {iconConfig} e selecione</span> 
                             <span className="-mt-6 font-semibold">Aparelhos Conectados</span>
                             <span>3. Toque em Conectar um aparelho</span>
-                            <span>4. Aponte seu celular para esta tela para capturar o código QR</span>
-                            
+                            <span>4. Aponte seu celular para esta tela para capturar o código QR</span>  
                         </section>
                     </section>
                     <section className="w-2/5 h-full flex justify-center items-center">
-                        <Image src="/codigo-1.png" width={300} height={300} alt="codigo" />
+                        <Image src="/codigo-1.png" width={250} height={250} alt="codigo" />
                     </section>
                 </section>
                 <section className="w-full h-1/2 bg-slate-50">
-                    <section className="w-full h-1/4 flex flex-col items-center justify-center">
+                    <section className="w-full h-1/4 invisible lg:flex lg:flex-col lg:visible items-center justify-center">
                         <h1 className="font-light text-3xl">Tutorial</h1>
                         <p className="font-medium text-sm mt-2 text-green-600">Precisa de ajuda para começar?</p>
                     </section>
-                    <section className="w-full h-3/4 flex flex-col">
+                <section className="w-full h-3/4 flex flex-col">
                         
-                    </section>
                 </section>
             </section>
-        </main>
+        </section>
+    </main>
     )
 }
